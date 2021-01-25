@@ -1,0 +1,9 @@
+@import "./scss/_variables.scss"; //Always in first order
+@import '~bootstrap/scss/bootstrap.scss'; //Always after custom variables
+
+@import "./scss/_material-theme.scss";
+@import "./scss/_fonts.scss";
+@import "./scss/_utilities.scss";
+
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';

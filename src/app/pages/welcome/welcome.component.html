@@ -1,0 +1,244 @@
+<div class="fixed-top">
+    <div class="logo-container text-center mx-auto">
+        <img src="assets/img/logo.jpg" alt="Logo" height="60">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
+        <div class="container">
+            <button class="navbar-toggler border-0 ms-auto me-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i-feather name="menu"></i-feather>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center pt-5 pt-lg-0">
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(sectionTwo)">Nosotros</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(sectionThree)">Habitaciones</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(sectionFour)">Galería</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-0 ms-auto text-center">
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(sectionFive)">Lugares</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(sectionSix)">Reservar</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link font-weight-bold text-white cursor-pointer" (click)="scroll(footer)">Contácto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section #sectionOne class="section-one">
+    <div class="container-fluid h-100 p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/espacios_comunes/36.jpg" class="d-block w-100">
+
+                    <div class="carousel-caption d-none d-md-flex align-items-center h-100 justify-content-center">
+                        <div>
+                            <h1 class="fw-bold text-uppercase">Desconectate de la rutina</h1>
+                            <button mat-flat-button color="accent" class="rounded-0 px-4 py-2" data-bs-toggle="modal"
+                                data-bs-target="#reservationModal">
+                                <p class="fs-5 p-0 m-0 fw-normal">Reservar ahora</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel_santa_rosa/2.jpg" class="d-block w-100">
+
+                    <div class="carousel-caption d-none d-md-flex align-items-center h-100 justify-content-center">
+                        <div>
+                            <h1 class="fw-bold text-uppercase">Comodidad y privacidad</h1>
+                            <p class="handwriting fs-4">Ven y vive una experiencia única de espacio, comodidad y
+                                privacidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hotel_santa_rosa/4.jpg" class="d-block w-100">
+
+                    <div class="carousel-caption d-none d-md-flex align-items-center h-100 justify-content-center">
+                        <div>
+                            <h1 class="fw-bold text-uppercase">Para toda ocasión</h1>
+                            <p class="handwriting fs-4">Disfruta de tu viaje, vacaciones o una escapada de fin de semana
+                                en nuestras comodas habitaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section #sectionTwo class="section-two py-md-5">
+    <div class="container py-5">
+        <div class="row fade-in align-items-center">
+            <div class="col-12 col-md-7">
+                <h1 class="handwriting rotate text-center text-md-start">Bienvenido al historico</h1>
+                <h1 class="handwriting rotate text-center text-md-start">Hotel Santa Rosa</h1>
+                <p class="text-muted">
+                    A media cuadra de la Plaza de Armas, se encuentra una de las primeras
+                    casonas de la época de la colonia: la Casona Solariega Gutiérrez.
+                    Edificada en 1630, hoy en día es el Hotel Santa Rosa, paradero obligatorio
+                    para disfrutar lo mejor de Ayacucho. Gracias a los trabajos de restauración y
+                    conservación, el Hotel Santa Rosa es declarado como Patrimonio
+                    Cultural para convertirse en una muestra viva y permanente de la
+                    fusión de arte andino y europeo, creando una atmósfera histórica única
+                    como hotel en Ayacucho.
+                    <br><br>
+                    Los ambientes están decorados con arte ayacuchano,
+                    las habitaciones complementan el diseño antiguo y ofrecen la experiencia de
+                    dormir en una casa histórica colonial; el patio central cobra vida con una hermosa
+                    pileta de piedra; y finalmente, contamos con la mejor atención al visitante,
+                    incluyendo el servicio de restaurant y estacionamiento.
+                    <br><br>
+                    El Hotel Santa Rosa es parte de la historia de Ayacucho y de todos los
+                    visitantes ilustres que visitan nuestra ciudad.
+                </p>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="p-2 img-container">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/hotel_santa_rosa/8.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/espacios_comunes/38.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/espacios_comunes/23.jpg" class="d-block w-100">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section #sectionThree class="section-three bg-light">
+    <div class="container py-5">
+        <div class="row py-md-5 d-flex align-items-center" [ngClass]="{'d-none': item.index != activeSectionThree}"
+            *ngFor="let item of sectionThreeItems">
+            <div class="col-lg-6 order-2 order-lg-1 pt-4 pt-lg-0">
+                <div class="row">
+                    <div class="col">
+                        <img [src]="item.gallery[0]" loading="lazy" class="img-thumbnail img-fluid shadow" alt="...">
+                    </div>
+                    <div class="col">
+                        <img [src]="item.gallery[1]" loading="lazy" class="img-thumbnail alt img-fluid shadow" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 fade-in ps-lg-5 order-1 order-lg-2">
+                <div class="row">
+                    <div class="col-8">
+                        <h1 class="handwriting">{{item.title}}</h1>
+                    </div>
+                    <div class="col-4 text-end">
+                        <button mat-icon-button matTooltip="Anterior" (click)="incrementSectionThreeItem(true)">
+                            <mat-icon>keyboard_arrow_left</mat-icon>
+                        </button>
+                        <button mat-icon-button matTooltip="Siguiente" (click)="incrementSectionThreeItem()">
+                            <mat-icon>keyboard_arrow_right</mat-icon>
+                        </button>
+                    </div>
+                </div>
+                <p class="text-muted fade-in text-justify">
+                    {{item.description}}
+                </p>
+                <mat-chip-list>
+                    <mat-chip *ngFor="let service of item.services" class="m-1">
+                        <i-feather [name]="service.icon" class="me-2"></i-feather>
+                        {{service.title | titlecase}}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section #sectionFour class="section-four">
+    <div class="container py-5">
+        <h1 class="handwriting mb-5 text-center">Galeria</h1>
+        <ngx-masonry [options]="masonryOptions" [ordered]="true" class="w-100">
+            <div ngxMasonryItem *ngFor="let item of sectionFourItems; let i = index;" style="width: 33%;" class="p-2">
+              <img class="img-thumbnail" [src]="item.img" width="100%">
+            </div>
+        </ngx-masonry>
+    </div>
+</section>
+
+<section #sectionFive class="section-five">
+    <div class="container py-5">
+        <h1 class="handwriting my-3 text-center">Lugares turisticos</h1>
+        <div class="row my-4 py-md-3 d-flex align-items-center" *ngFor="let item of sectionFiveItems">
+            <div class="col-12 col-md-5 d-flex justify-content-center" [ngClass]="{'order-md-2': item.ltr}">
+                <div class="w-75" [ngClass]="{'img-card': !item.ltr, 'img-card-ltr' : item.ltr}">
+                    <img [src]="item.img" loading="lazy" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-7" [ngClass]="{'order-md-1': item.ltr}">
+                <h2 class="handwriting mt-4 mt-md-0 mb-3">{{item.title}}</h2>
+                {{item.description}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section #sectionSix class="section-six py-5">
+    <div class="container">
+        <div class="card border-0 shadow rounded-0">
+            <div class="card-body">
+                <h1 class="handwriting my-3">Reserva ahora mismo...!</h1>
+                <app-reservation-form></app-reservation-form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section #footer>
+    <app-footer></app-footer>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="reservationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reservationModalLabel">Reservar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-reservation-form></app-reservation-form>
+            </div>
+        </div>
+    </div>
+</div>

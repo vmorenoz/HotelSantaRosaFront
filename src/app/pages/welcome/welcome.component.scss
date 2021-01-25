@@ -1,0 +1,185 @@
+@import "../../../scss/variables";
+
+.logo-container{
+    width: 280px;
+    position: relative;
+}
+
+.logo-container::before{
+    content: '';
+    width: 100%;
+    height: 180px;
+    background-color: $white;
+    border-radius: 50%;
+    top: -6rem;
+    left: 0;
+    position: absolute;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.35);
+    z-index: -1;
+}
+
+.navbar{
+    transition: all .2s ease-in-out;
+    margin-top: -3rem;
+    z-index: -3;
+}
+
+.navbar-bg{
+    margin-top: -3.9rem;
+
+    .nav-link{
+        color: #ffffff;
+    }
+
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+        opacity: .9;
+        background-color: $blue;
+        z-index: -2;
+    }
+}
+
+.section-one{
+    .carousel-item{
+        overflow: hidden;
+        max-height: 100vh;
+        img{
+            animation: ani 18s linear infinite;
+        }
+    }
+}
+
+.section-two{
+    background-image: linear-gradient(180deg, #ffffff 0%, #f8f8f8 51%, #ffffff 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .img-container{
+        background-color: rgba($secondary, .3);
+        transition: all .3s ease-in-out;
+        border-radius: .25rem;
+        transform: rotate(-1.5deg);
+        img{
+            transition: all .3s ease-in-out;
+            transform: rotate(2deg);
+        }
+    }
+
+    .img-container:hover{
+        transform: scale(1.06) rotate(0deg);
+        img{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.section-three{
+    .img-thumbnail{
+        transition: all .3s ease-in-out;
+        transform: rotate(-1.2deg);
+    }
+    .alt{
+        transform: rotate(1.3deg);
+    }
+    .img-thumbnail:hover{
+        transform: scale(1.15) rotate(0deg);
+    }
+}
+
+.section-five{
+    background-image: linear-gradient(90deg, rgba(255,255,255,.85) 0%, rgba(255,255,255,.85) 51%, rgba(255,255,255,.85) 100%),
+    url('../../../assets/img/ayacucho-night.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    .img-card, .img-card-ltr{
+        position: relative;
+        transition: all .5s ease-in-out;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            top: -2%;
+            left: -2%;
+            width: 104%;
+            height: 104%;
+            background-color: rgba(#f8f8f8, 1);
+            border-radius: .025rem;
+            z-index: -1 !important;
+        }
+
+        img{
+            z-index: 9 !important;
+        }
+    }
+
+    .img-card{
+        transform: rotate(-1deg);
+    }
+    .img-card-ltr{
+        transform: rotate(1deg);
+    }
+    .img-card:hover{
+        transform: scale(1.1) rotate(0deg);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .img-card-ltr:hover{
+        transform: scale(1.1) rotate(0deg);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+}
+
+.section-six{
+    background-image: linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.1) 51%, rgba(255,255,255,.1) 100%),
+    url('../../../assets/img/espacios_comunes/41.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .card{
+        background-color: rgba(255,255,255, .9);
+    }
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 768px){
+        
+    .logo-container{
+        width: 230px;
+        position: relative;
+    }
+
+    .logo-container::before{
+        content: '';
+        width: 100%;
+        height: 150px;
+        background-color: $white;
+        border-radius: 50%;
+        top: -4.8rem;
+        left: 0;
+        position: absolute;
+        box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.35);
+        z-index: -1;
+    }
+}
+
+/*Animations*/
+
+@keyframes ani{
+    0%{transform: scale(1);}
+    55%{transform: scale(1.08);}
+}

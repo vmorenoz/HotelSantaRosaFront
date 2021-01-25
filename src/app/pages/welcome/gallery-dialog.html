@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-1 d-flex align-items-center justify-content-center cursor-pointer" (click)="incrementGallery(true)">
+            <i-feather name="arrow-left"></i-feather>
+        </div>
+        <div class="col-10">
+            <img loading="lazy" [src]="item.img" alt="" class="img-fluid fade-in" [ngClass]="{'d-none': data.index != i}" *ngFor="let item of data.gallery; let i = index;">
+        </div>
+        <div class="col-1 d-flex align-items-center justify-content-center cursor-pointer" (click)="incrementGallery()">
+            <i-feather name="arrow-right"></i-feather>
+        </div>
+    </div>
+</div>
