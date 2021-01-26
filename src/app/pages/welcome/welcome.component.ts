@@ -63,8 +63,8 @@ export class WelcomeComponent implements OnInit {
       index: 2,
       title: 'Simple ejecutiva',
       gallery: [
-        'assets/img/matrimonial/18.jpg',
-        'assets/img/matrimonial/12.jpg',
+        'assets/img/matrimonial/14.jpg',
+        'assets/img/matrimonial/20.jpg',
       ],
       description: "Habitaciones ideales para quienes desean olvidarse de la rutina diaria gracias a su ambiente acogedor.",
       services: [
@@ -111,7 +111,7 @@ export class WelcomeComponent implements OnInit {
       title: 'Doble',
       gallery: [
         'assets/img/doble/9.jpg',
-        'assets/img/doble/6.jpg',
+        'assets/img/doble/8.jpg',
         'assets/img/doble/12.jpg',
         'assets/img/doble/1.jpg',
       ],
@@ -209,7 +209,7 @@ export class WelcomeComponent implements OnInit {
       title: 'Matrimonial',
       gallery: [
         'assets/img/matrimonial/4.jpg',
-        'assets/img/matrimonial/10.jpg',
+        'assets/img/matrimonial/16.jpg',
         'assets/img/matrimonial/20.jpg',
         'assets/img/matrimonial/17.jpg',
       ],

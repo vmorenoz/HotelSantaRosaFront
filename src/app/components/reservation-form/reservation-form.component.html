@@ -19,7 +19,7 @@
                     <input matInput type="tel" formControlName="phone_number">
                 </mat-form-field>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <mat-form-field appearance="outline" class="w-100">
                     <mat-label>Llegada</mat-label>
                     <input matInput [matDatepicker]="dp1" disabled formControlName="check_in">
@@ -27,7 +27,7 @@
                     <mat-datepicker #dp1 disabled="false"></mat-datepicker>
                 </mat-form-field>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <mat-form-field appearance="outline" class="w-100">
                     <mat-label>Salida</mat-label>
                     <input matInput [matDatepicker]="dp2" disabled formControlName="check_out">
@@ -45,31 +45,11 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div class="col-12 col-md-4">
-                <mat-form-field appearance="outline" class="w-100">
-                    <mat-label>Adultos</mat-label>
-                    <mat-select formControlName="adults_number">
-                        <mat-option *ngFor="let item of [0,1,2,3,4,5,6,7,8]" [value]="item">
-                            {{item}}
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <div class="col-12 col-md-4">
-                <mat-form-field appearance="outline" class="w-100">
-                    <mat-label>Niños</mat-label>
-                    <mat-select formControlName="childrens_number">
-                        <mat-option *ngFor="let item of [0,1,2,3,4,5,6,7,8]" [value]="item">
-                            {{item}}
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <div class="col-12 col-md-12">
-                <mat-form-field appearance="outline" class="w-100">
-                    <mat-label>Observación adicional</mat-label>
-                    <textarea matInput formControlName="observation"></textarea>
-                </mat-form-field>
+            <div class="col-12">
+                <p class="small text-muted my-1">• Disponibilidad de habitaciones previa evaluación, nos pondremos en contácto contigo.</p>
+                <p class="small text-muted my-1">• Al enviar este formulario, otorgas consentimiento autorizado para
+                    registrar y procesar tu información.
+                </p>
             </div>
             <div class="col-12 text-end">                
                 <button mat-flat-button type="submit" [disabled]="formGroup.invalid" color="primary" class="rounded-0 px-4 py-2">

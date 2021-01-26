@@ -11,6 +11,7 @@ export class ReservationFormComponent implements OnInit {
 
   rooms : any[] = [
     'Simple',
+    'Simple ejecutiva',
     'Doble',
     'Triple',
     'Matrimonial',
@@ -44,16 +45,7 @@ export class ReservationFormComponent implements OnInit {
       phone_number : this.formBuilder.control('', Validators.required),
       check_in : this.formBuilder.control(new Date(), Validators.required),
       check_out : this.formBuilder.control(''),
-      adults_number : this.formBuilder.control(1, [
-        Validators.required,
-        Validators.min(0)
-      ]),
-      childrens_number : this.formBuilder.control(0, [
-        Validators.required,
-        Validators.min(0)
-      ]),
-      room : this.formBuilder.control('', Validators.required),
-      observation : this.formBuilder.control(''),
+      room : this.formBuilder.control('', Validators.required)
     })
   }
 
