@@ -9,10 +9,12 @@ import { MaterialModule } from '../shared/material.module';
 import { IconsModule } from '../shared/icons.module';
 import { ComponentsModule } from '../components/components.module';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { HomeComponent } from './home/home.component';
+import { RoomsComponent } from './rooms/rooms.component';
 
 
 @NgModule({
-  declarations: [PagesComponent, WelcomeComponent, GalleryDialog],
+  declarations: [PagesComponent, WelcomeComponent, GalleryDialog, HomeComponent, RoomsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

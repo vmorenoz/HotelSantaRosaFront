@@ -1,0 +1,21 @@
+@import "../../../scss/variables";
+
+.jumbotron{
+    height: 100vh;
+    background-image: url('../../../assets/img/espacios_comunes/4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .home-card{
+        background-color: rgba($secondary, .5);
+
+        .card-title{
+            font-size: 3.5rem;
+            color: $white;
+        }
+        .card-subtitle{
+            color: rgba($white, .9);
+        }
+    }
+}

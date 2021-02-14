@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconsModule } from './icons.module';
 import { MaterialModule } from './material.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavbarComponent, FooterComponent],
@@ -11,7 +12,8 @@ import { MaterialModule } from './material.module';
   imports: [
     CommonModule,
     IconsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ]
 })
 export class SharedModule { }
